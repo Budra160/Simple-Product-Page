@@ -1,0 +1,17 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --primary-bg-color: #fff;
+    --secondary-bg-color: #F3F4F6;
+    
+    --primary-text-color: #000;
+    --secondary-text-color: #394150;
+
+    --accent-color: #652CD1;
+    --border-color: #D2D5DA;
+}
