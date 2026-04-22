@@ -15,3 +15,183 @@
     --accent-color: #652CD1;
     --border-color: #D2D5DA;
 }
+
+body{
+
+    min-height: 100svh;
+    font-family: Outfit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,h2{
+
+    letter-spacing: -1%;
+    font-weight:590;
+}
+
+h1{
+
+    font-size:2rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+p{
+
+    line-height: 1.5;
+}
+
+.page_grid{
+
+    min-width: min-content;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    column-gap: 3.25rem;
+    
+}
+
+.product_image-wrapper{
+
+    width: fit-content;
+    overflow: hidden;
+    justify-self: center;
+    align-self: center;
+    max-width: 29.5rem;
+
+}
+
+.product_image-wrapper img{
+
+    width:100%;
+    border-radius: 1rem;
+}
+
+.product_nav a{
+    
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.product_nav a:last-child{
+
+    color:var(--secondary-text-color);
+}
+
+.product_content-wrapper, .product_content, .product_content-top, .list_wrapper{
+
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.product_content, .product_content-wrapper{
+
+    gap:2.5rem;
+}
+
+.product_content-top{
+
+    gap: 1.5rem;
+}
+
+.list_wrapper{
+
+    gap: 0.75rem;
+}
+
+.product_list li{
+
+    margin-bottom: 0.25rem;
+}
+
+.product_list li:last-child{
+
+    margin-bottom: 0rem;
+}
+
+.product_info{
+
+    background-color: var(--secondary-bg-color);
+    width: fit-content;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: .75rem 1.5rem;
+    
+}
+
+.product_color, .product_size, .product_price{
+
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    color:var(--secondary-text-color);
+    font-size:.9rem;
+}
+
+b{
+    color:black;
+    font-size: 1rem;
+}
+
+.product_price b{
+
+    font-size: 2rem;
+}
+
+button{
+
+    font-family: Outfit;
+    line-height: 1.5;
+    padding: .5rem 2rem;
+    gap:.65rem;
+    font-weight: 500;
+    height:2.5rem;
+    border-radius: .25rem;
+}
+
+.primary-button{
+
+    border:none;
+    background-color: var(--accent-color);
+    color:var(--primary-bg-color)
+}
+
+.secondary-button{
+
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+}
+
+.button-group{
+
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (width <= 1024px) {
+
+    .page-grid{
+
+        gap:3rem
+    }
+    
+}
+
+@media screen and (width <= 640px) {
+
+    .page_grid{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+}
